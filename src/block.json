@@ -1,0 +1,87 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "christian-codez/c-codez-countdown-timer",
+	"version": "0.1.0",
+	"title": "Countdown Timer",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {
+    "attributes": {
+      "title": "Countdown Timer",
+      "startDate": "2021-12-31T23:59:59",
+      "showLabels": true,
+      "labelDays": "Days",
+      "labelHours": "Hours",
+      "labelMinutes": "Minutes",
+      "labelSeconds": "Seconds"
+    }
+  },
+	"supports": {
+		"html": false,
+    "innerBlocks": true
+	},
+  "attributes": {
+    "startDate": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "link": {
+      "type": "object",
+      "default": {
+        "url": "",
+        "title": "",
+        "target": false
+      }
+    },
+    "coverImage": {
+      "type": "string",
+      "default": ""
+    },
+    "showLabels": {
+      "type": "boolean",
+      "default": true
+    },
+    "labelDays": {
+      "type": "string",
+      "default": "Days"
+    },
+    "labelHours": {
+      "type": "string",
+      "default": "Hours"
+    },
+    "labelMinutes": {
+      "type": "string",
+      "default": "Minutes"
+    },
+    "labelSeconds": {
+      "type": "string",
+      "default": "Seconds"
+    },
+    "labelTextColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "numberTextColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "headerContent": { "type": "array", "default": [] },
+    "footerContent": { "type": "array", "default": [] }
+  },
+	"textdomain": "c-codez-countdown-timer",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
