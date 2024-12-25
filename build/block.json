@@ -4,48 +4,37 @@
   "name": "christian-codez/c-codez-countdown-timer",
   "version": "0.1.0",
   "title": "Countdown Timer",
-  "category": "widgets",
-  "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "category": "christian-codez",
+  "description": "A simple countdown timer block.",
   "example": {
     "attributes": {
-      "title": "Countdown Timer",
-      "startDate": "2021-12-31T23:59:59",
-      "showLabels": true,
+      "startDate": "2028-12-02T07:41:00",
       "labelDays": "Days",
       "labelHours": "Hours",
       "labelMinutes": "Minutes",
-      "labelSeconds": "Seconds"
+      "labelSeconds": "Seconds",
+      "overlayColor": "#000"
     }
   },
   "supports": {
-    "html": false,
-    "innerBlocks": true
+    "html": true,
+    "innerBlocks": true,
+    "spacing": {
+      "padding": true
+    }
   },
   "attributes": {
     "startDate": {
       "type": "string",
       "default": ""
     },
-    "title": {
-      "type": "string",
-      "default": ""
-    },
-    "link": {
-      "type": "object",
-      "default": {
-        "url": "",
-        "title": "",
-        "target": false
-      }
-    },
     "coverImage": {
       "type": "string",
       "default": ""
     },
-    "showLabels": {
-      "type": "boolean",
-      "default": true
+    "overlayColor": {
+      "type": "string",
+      "default": ""
     },
     "labelDays": {
       "type": "string",
@@ -74,14 +63,6 @@
     "backgroundColor": {
       "type": "string",
       "default": "#000"
-    },
-    "headerContent": {
-      "type": "array",
-      "default": []
-    },
-    "footerContent": {
-      "type": "array",
-      "default": []
     }
   },
   "textdomain": "c-codez-countdown-timer",

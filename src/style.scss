@@ -1,4 +1,4 @@
-kj/**
+/**
  * The following styles get applied both on the front of your site
  * and in the editor.
  *
@@ -6,7 +6,57 @@ kj/**
  */
 
 .wp-block-christian-codez-c-codez-countdown-timer {
-	background-color: #21759b;
-	color: #fff;
+  position: relative;
+  overflow: hidden;
 	padding: 2px;
+
+  .countdown-cover-image-wrapper {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: var(--overlay-color, #000);
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
+  }
+
+  .inner-block-content-container {
+    position: relative;
+    z-index: 4;
+  }
+
+  .countdown-cover-image {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .wp-block-heading, p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+}
+
+div[data-type="core/button"], .wp-block-button {
+  display: block;
+
+  &.is-style-align-left {
+    text-align: left;
+  }
+
+  &.is-style-align-center {
+    text-align: center;
+  }
+  &.is-style-align-right {
+    text-align: right;
+  }
 }

@@ -9,7 +9,7 @@
 .wp-block-christian-codez-c-codez-countdown-timer .countdown-container {
   position: relative;
   overflow: hidden;
-  padding: 40px 24px;
+  padding-bottom: 1.5rem;
 }
 .wp-block-christian-codez-c-codez-countdown-timer .countdown-container .countdown-cover-image {
   position: absolute;
@@ -54,4 +54,30 @@
 
 .components-dropdown__content.anchor-link-content .components-popover__content {
   min-width: 15.25rem;
+}
+
+.wp-block-christian-codez-c-codez-countdown-timer {
+  position: relative;
+  overflow: hidden;
+}
+.wp-block-christian-codez-c-codez-countdown-timer .countdown-cover-image-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.wp-block-christian-codez-c-codez-countdown-timer .countdown-cover-image-wrapper::before {
+  content: "";
+  display: block;
+  background-color: var(--overlay-color, #000);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.wp-block-christian-codez-c-codez-countdown-timer .countdown-cover-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

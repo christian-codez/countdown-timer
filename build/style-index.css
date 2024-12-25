@@ -1,10 +1,108 @@
 /*!***************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
-kj .wp-block-christian-codez-c-codez-countdown-timer {
-  background-color: #21759b;
-  color: #fff;
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-christian-codez-c-codez-countdown-timer {
+  position: relative;
+  overflow: hidden;
   padding: 2px;
+}
+.wp-block-christian-codez-c-codez-countdown-timer .countdown-cover-image-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.wp-block-christian-codez-c-codez-countdown-timer .countdown-cover-image-wrapper::before {
+  content: "";
+  display: block;
+  background-color: var(--overlay-color, #000);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.wp-block-christian-codez-c-codez-countdown-timer .inner-block-content-container {
+  position: relative;
+  z-index: 4;
+}
+.wp-block-christian-codez-c-codez-countdown-timer .countdown-cover-image {
+  position: absolute;
+  inset: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.wp-block-christian-codez-c-codez-countdown-timer .wp-block-heading, .wp-block-christian-codez-c-codez-countdown-timer p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+div[data-type="core/button"], .wp-block-button {
+  display: block;
+}
+div[data-type="core/button"].is-style-align-left, .wp-block-button.is-style-align-left {
+  text-align: left;
+}
+div[data-type="core/button"].is-style-align-center, .wp-block-button.is-style-align-center {
+  text-align: center;
+}
+div[data-type="core/button"].is-style-align-right, .wp-block-button.is-style-align-right {
+  text-align: right;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/custom-blocks/timer/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+.wp-block-christian-codez-timer {
+  margin-top: 2rem;
+}
+.wp-block-christian-codez-timer .countdown-container {
+  position: relative;
+  padding-bottom: 1.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.wp-block-christian-codez-timer .countdown-container .countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .wp-block-christian-codez-timer .countdown-container .countdown-timer {
+    gap: 1rem;
+  }
+}
+.wp-block-christian-codez-timer .countdown-container .countdown-timer .countdown-item {
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 0.25rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: clamp(32px, 8vw, 80px);
+}
+.wp-block-christian-codez-timer .countdown-container .countdown-timer .countdown-item .countdown-number {
+  color: #fff;
+  font-weight: bold;
+  font-size: clamp(14px, 4vw, 32px);
+  line-height: 1;
+}
+.wp-block-christian-codez-timer .countdown-container .countdown-timer .countdown-item .countdown-label {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  font-size: clamp(10px, 2vw, 16px);
+  line-height: 1;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
